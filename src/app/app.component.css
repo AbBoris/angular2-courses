@@ -1,0 +1,26 @@
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer,
+nav {
+    background-color: fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+span.active {
+  background-color: gray;
+}
+

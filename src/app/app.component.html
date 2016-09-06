@@ -1,0 +1,25 @@
+<div class="app">
+    <nav class="ui fixed">
+        <span>
+        <a [routerLink]=" ['./login'] ">
+          Login
+        </a>
+      </span> |
+        <span>
+        <a [routerLink]=" ['./course'] ">
+          New Course
+        </a>
+      </span> |
+        <span>
+        <a [routerLink]=" ['./courses'] ">
+          Courses
+        </a>
+      </span>
+    </nav>
+
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer >Boris Abdulov | 2016</footer>
+</div>

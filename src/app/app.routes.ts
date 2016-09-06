@@ -1,17 +1,17 @@
 import { Routes, RouterModule } from '@angular/router';
-import { Home } from './home';
-import { About } from './about';
-import { NoContent } from './no-content';
+import { Course } from './course';
+import { Courses } from './courses';
+import { Login } from'./login';
 
 import { DataResolver } from './app.resolver';
 
 
 export const ROUTES: Routes = [
-  { path: '',      component: Home },
-  { path: 'home',  component: Home },
-  { path: 'about', component: About },
+  { path: 'login',  component: Login },
+  { path: 'course', component: Course },
+  { path: 'courses', component: Courses },
   {
     path: 'detail', loadChildren: () => System.import('./+detail')
   },
-  { path: '**',    component: NoContent },
+  { path: '**',    component: Login },
 ];

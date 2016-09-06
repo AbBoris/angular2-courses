@@ -14,10 +14,9 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState } from './app.service';
-import { Home } from './home';
-import { About } from './about';
-import { NoContent } from './no-content';
-import { XLarge } from './home/x-large';
+import { Login } from './login';
+import { Course } from './course';
+import { Courses } from './courses';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -32,10 +31,9 @@ const APP_PROVIDERS = [
   bootstrap: [ App ],
   declarations: [
     App,
-    About,
-    Home,
-    NoContent,
-    XLarge
+    Login,
+    Course,
+    Courses
   ],
   imports: [ // import Angular's modules
     BrowserModule,
